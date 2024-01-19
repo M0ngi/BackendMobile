@@ -1,0 +1,23 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Status",
+    "dateExported": "2024-01-19T23:30:08.741Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f9070059-bed7-4771-85bb-d08e2deb5d58",
+            "colId": "db595bfc-184b-4484-8987-5e59331c8875",
+            "containerId": "",
+            "name": "Lifecheck",
+            "url": "http://localhost:5001/api",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-19T22:39:04.644Z",
+            "modified": "2024-01-19T22:39:04.644Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Post",
+    "dateExported": "2024-01-19T23:29:57.414Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5c1953ec-5b34-4b92-8a0d-50a7d53e4163",
+            "colId": "6ac2e2a1-8690-464e-9c37-9e50c468d0ca",
+            "containerId": "",
+            "name": "Create",
+            "url": "{{HOST}}/api/post",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2024-01-19T22:41:06.826Z",
+            "modified": "2024-01-19T22:49:36.137Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"content\": \"A very random text\",\n  \"title\": \"Title 1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5520eac1-aeb6-467c-96d6-c7d2b0f2d5c6",
+            "colId": "6ac2e2a1-8690-464e-9c37-9e50c468d0ca",
+            "containerId": "",
+            "name": "Get All",
+            "url": "{{HOST}}/api/post",
+            "method": "GET",
+            "sortNum": 22500,
+            "created": "2024-01-19T22:41:01.553Z",
+            "modified": "2024-01-19T22:50:06.355Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ec5c38fa-6c34-4466-9087-ea03a6429318",
+            "colId": "6ac2e2a1-8690-464e-9c37-9e50c468d0ca",
+            "containerId": "",
+            "name": "Get One",
+            "url": "{{HOST}}/api/post/65aafc816523a64bbc1b0e55",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-01-19T22:41:14.255Z",
+            "modified": "2024-01-19T22:51:09.098Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1ed7c682-a715-44e0-9f16-77b2f1819489",
+            "colId": "6ac2e2a1-8690-464e-9c37-9e50c468d0ca",
+            "containerId": "",
+            "name": "Delete",
+            "url": "{{HOST}}/api/post/65aafc816523a64bbc1b0e55",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-01-19T22:52:27.406Z",
+            "modified": "2024-01-19T22:52:41.494Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5f3d8fde-6b71-4a20-8cb8-7caef41f3f52",
+            "colId": "6ac2e2a1-8690-464e-9c37-9e50c468d0ca",
+            "containerId": "",
+            "name": "Update",
+            "url": "{{HOST}}/api/post/65aaffb8e6e44cae45765a00",
+            "method": "PATCH",
+            "sortNum": 50000,
+            "created": "2024-01-19T23:03:03.296Z",
+            "modified": "2024-01-19T23:05:49.562Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"A new title\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "headers": [
+            {
+                "name": "Content-Type",
+                "value": "application/json"
+            }
+        ],
+        "auth": {
+            "type": "bearer",
+            "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWFmOTY5NzdhOWM5MTkwYTVmNzI3NSIsInRpbWUiOjE3MDU3MDU2ODgzMTUsImlhdCI6MTcwNTcwNTY4OCwiZXhwIjoxNzA1NzkyMDg4fQ.ZhznhUTB8SiKy4bQMMgpx8zakORlIbe1daA1Je2HD7M"
+        }
+    }
+}

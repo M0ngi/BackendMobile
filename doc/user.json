@@ -1,0 +1,101 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "User",
+    "dateExported": "2024-01-19T23:30:16.838Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "971a6f60-c287-46eb-b441-242d23211226",
+            "colId": "dcb7cd3b-8748-4b99-bd70-dd41a6dd2f35",
+            "containerId": "",
+            "name": "Current user",
+            "url": "{{HOST}}/api/user",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-19T23:10:01.380Z",
+            "modified": "2024-01-19T23:10:41.841Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ab576a7d-0286-4671-80ca-e61da86e8d6c",
+            "colId": "dcb7cd3b-8748-4b99-bd70-dd41a6dd2f35",
+            "containerId": "",
+            "name": "Delete",
+            "url": "{{HOST}}/api/user",
+            "method": "DELETE",
+            "sortNum": 15000,
+            "created": "2024-01-19T23:23:40.295Z",
+            "modified": "2024-01-19T23:23:51.707Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2abe78e3-f834-444b-903c-038f8bbae7ac",
+            "colId": "dcb7cd3b-8748-4b99-bd70-dd41a6dd2f35",
+            "containerId": "",
+            "name": "User by id",
+            "url": "{{HOST}}/api/user/65aaf96977a9c9190a5f7275",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-01-19T23:10:48.509Z",
+            "modified": "2024-01-19T23:11:07.365Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "36ec4fd7-275f-4a5a-bc3a-d644860eb87f",
+            "colId": "dcb7cd3b-8748-4b99-bd70-dd41a6dd2f35",
+            "containerId": "",
+            "name": "Update password",
+            "url": "{{HOST}}/api/user/password",
+            "method": "PATCH",
+            "sortNum": 20000,
+            "created": "2024-01-19T23:13:49.738Z",
+            "modified": "2024-01-19T23:22:14.957Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\": \"TestPass1234\",\n  \"currentPass\": \"TestPass123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "48bcf17f-9da4-459e-87fe-32fa9b181026",
+            "colId": "dcb7cd3b-8748-4b99-bd70-dd41a6dd2f35",
+            "containerId": "",
+            "name": "Update user",
+            "url": "{{HOST}}/api/user/",
+            "method": "PATCH",
+            "sortNum": 30000,
+            "created": "2024-01-19T23:22:46.057Z",
+            "modified": "2024-01-19T23:23:18.924Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"fullname\": \"Leonardo Capon\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "headers": [
+            {
+                "name": "Content-Type",
+                "value": "application/json"
+            }
+        ],
+        "auth": {
+            "type": "bearer",
+            "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YWIwNGVhMzdjZTNiNDQ1MWQ3YWNhOSIsInRpbWUiOjE3MDU3MDY3MzU0MjYsImlhdCI6MTcwNTcwNjczNSwiZXhwIjoxNzA1NzkzMTM1fQ.XEXUhFcYyGC9GuPAxAGl0qg1eTFkF8FGotxeXtJb-3g"
+        }
+    }
+}
