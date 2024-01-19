@@ -270,6 +270,8 @@ Example response:
 }
 ```
 
+---
+
 #### Post ( /api/post )
 
 * **GET** `/api/post/`: Get all posts
