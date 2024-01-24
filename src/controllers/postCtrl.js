@@ -6,7 +6,7 @@ const authCtrl = {
     create: async (req, res) => {
         try {
             const newPost = await postService.createNewPost(req.user, req.body);
-            return successResp(res, 201, newPost._doc)
+            return successResp(res, 201, { post: newPost._doc })
         } catch (err) {
             return errorResp(res, 500, err.message)
         }
@@ -23,7 +23,7 @@ const authCtrl = {
 
             const newPost = await postService.updatePost(id, req.body)
 
-            return successResp(res, 200, newPost)
+            return successResp(res, 200, { post: newPost })
         } catch (err) {
             return errorResp(res, 500, err.message)
         }
@@ -42,7 +42,7 @@ const authCtrl = {
             if (post.postedBy._id.toString() != user._id.toString()) return errorResp(res, 401, "You do not own this post.")
             await postService.deletePost(id);
 
-            return successResp(res, 200, post);
+            return successResp(res, 200, { post });
         } catch (err) {
             return errorResp(res, 500, err.message)
         }
@@ -55,7 +55,7 @@ const authCtrl = {
             const post = await postService.findById(req.params.id)
             if (!post) return errorResp(res, 404, "Post does not exist.")
 
-            return successResp(res, 200, post)
+            return successResp(res, 200, { post })
         } catch (err) {
             console.log(err)
             return errorResp(res, 500, err.message)

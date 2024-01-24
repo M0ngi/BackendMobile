@@ -313,13 +313,15 @@ Example response:
 {
   "msg": "success",
   "data": {
-    "_id": "65aafc816523a64bbc1b0e55",
-    "title": "Title 1",
-    "content": "a very random text",
-    "postedBy": "65aaf96977a9c9190a5f7275",
-    "createdAt": "2024-01-19T22:49:37.109Z",
-    "updatedAt": "2024-01-19T22:49:37.109Z",
-    "__v": 0
+    "post": {
+      "_id": "65aafc816523a64bbc1b0e55",
+      "title": "Title 1",
+      "content": "a very random text",
+      "postedBy": "65aaf96977a9c9190a5f7275",
+      "createdAt": "2024-01-19T22:49:37.109Z",
+      "updatedAt": "2024-01-19T22:49:37.109Z",
+      "__v": 0
+    }
   }
 }
 ```
@@ -343,13 +345,15 @@ Example response:
 {
   "msg": "success",
   "data": {
-    "_id": "65aafc816523a64bbc1b0e55",
-    "title": "New title",
-    "content": "a very random text",
-    "postedBy": "65aaf96977a9c9190a5f7275",
-    "createdAt": "2024-01-19T22:49:37.109Z",
-    "updatedAt": "2024-01-19T22:49:37.109Z",
-    "__v": 0
+    "post": {
+      "_id": "65aafc816523a64bbc1b0e55",
+      "title": "New title",
+      "content": "a very random text",
+      "postedBy": "65aaf96977a9c9190a5f7275",
+      "createdAt": "2024-01-19T22:49:37.109Z",
+      "updatedAt": "2024-01-19T22:49:37.109Z",
+      "__v": 0
+    }
   }
 }
 ```
@@ -367,13 +371,15 @@ Example response:
 {
   "msg": "success",
   "data": {
-    "_id": "65aafc816523a64bbc1b0e55",
-    "title": "New title",
-    "content": "a very random text",
-    "postedBy": "65aaf96977a9c9190a5f7275",
-    "createdAt": "2024-01-19T22:49:37.109Z",
-    "updatedAt": "2024-01-19T22:49:37.109Z",
-    "__v": 0
+    "post": {
+      "_id": "65aafc816523a64bbc1b0e55",
+      "title": "New title",
+      "content": "a very random text",
+      "postedBy": "65aaf96977a9c9190a5f7275",
+      "createdAt": "2024-01-19T22:49:37.109Z",
+      "updatedAt": "2024-01-19T22:49:37.109Z",
+      "__v": 0
+    }
   }
 }
 ```
