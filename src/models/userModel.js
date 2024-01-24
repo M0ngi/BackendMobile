@@ -2,6 +2,10 @@ const mongoose = require('mongoose')
 const bcrypt = require('bcrypt');
 
 const userSchema = new mongoose.Schema({
+    avatar: {
+        type: String,
+        default: "https://picsum.photos/seed/picsum/200/200"
+    },
     fullname: {
         type: String,
         required: true,
