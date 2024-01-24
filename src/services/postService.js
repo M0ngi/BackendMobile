@@ -13,7 +13,7 @@ const findById = async (id) => {
 }
 
 const findAll = async (page, pageSize) => {
-    return await (Posts.find().skip(page * pageSize).limit(pageSize))
+    return await (Posts.find().populate('postedBy').skip(page * pageSize).limit(pageSize))
 }
 
 const deletePost = async (id) => {
