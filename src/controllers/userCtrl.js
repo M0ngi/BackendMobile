@@ -9,7 +9,7 @@ const userCtrl = {
             const t = Date.now()
             req.user.email = `${req.user.email}.DEL.${t}`
             await req.user.save();
-            successResp(res, 200, { ...req.user._doc, email })
+            successResp(res, 200, { user: { ...req.user._doc, email } })
         } catch (err) {
             return errorResp(res, 500, err.message)
         }
@@ -17,7 +17,7 @@ const userCtrl = {
     getUser: async (req, res) => {
         try {
             if (!req.params.id) {
-                return successResp(res, 200, req.user)
+                return successResp(res, 200, { user: req.user })
             }
             const user = await Users.findById(req.params.id)
             if (!user) return errorResp(res, 404, "User does not exist.")
@@ -32,7 +32,7 @@ const userCtrl = {
         try {
             const { user } = await userService.updateUserInfo(req.user, req.body);
 
-            return successResp(res, 200, user)
+            return successResp(res, 200, { user })
         } catch (err) {
             return errorResp(res, 500, err.message)
         }
@@ -48,7 +48,7 @@ const userCtrl = {
 
             await user.updatePassword(password);
 
-            return successResp(res, 200, req.user)
+            return successResp(res, 200, { user: req.user })
         } catch (err) {
             return errorResp(res, 500, err.message)
         }
